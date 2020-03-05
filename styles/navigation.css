@@ -1,4 +1,4 @@
-.nav-links, .is-active {
+.nav__links, .nav .is-active {
   position: relative;
   padding: 23px 0;
   margin-right: 20px;
@@ -7,7 +7,15 @@
   font-style: normal;
   color: #000; }
 
-.navigation {
+ul,
+li {
+  margin: 0;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,23 +32,20 @@
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase; }
-
-.nav-links:hover {
-  color: #00acdc; }
-
-.is-active {
-  color: #00acdc; }
-  .is-active::after {
-    content: "";
-    position: absolute;
-    border-radius: 8px;
-    background-color: #00acdc;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 4px; }
-
-.nav-links:last-child {
-  margin-right: 0; }
+  .nav__links:hover {
+    color: #00acdc; }
+  .nav .is-active {
+    color: #00acdc; }
+    .nav .is-active::after {
+      content: "";
+      position: absolute;
+      border-radius: 8px;
+      background-color: #00acdc;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 4px; }
+  .nav-links:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=navigation.css.map */
